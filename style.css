@@ -32,6 +32,11 @@ body {
   background: var(--secondary);
 }
 
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -113,14 +118,6 @@ body {
     margin: 20px 0;
   }
 }
-
-/* Main */
-
-/* main {
-  flex: 1 1 0;
-  width: min(90%, 1440px);
-  margin-inline: auto;
-} */
 
 /* hero section */
 .hero {
@@ -204,6 +201,11 @@ body {
   .hero-content h1 {
     font-size: 2rem;
   }
+
+  .btn{
+    margin-bottom: 1rem;
+  }
+
   .hero-image{
     margin-bottom: 30px;
   }
