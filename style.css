@@ -381,11 +381,13 @@ header{
 
 .contact-container{
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
 .contact-contact {
   flex: 1;
+  min-height: 300px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -415,10 +417,8 @@ header{
   height: 2rem;
 }
 
-
-
-
 .contact-form{
+  min-height: 300px;
   flex: 1;
   display: flex;
   flex-direction: column;
