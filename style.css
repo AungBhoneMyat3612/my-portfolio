@@ -27,6 +27,7 @@ header{
   background-color: var(--secondary);
   position: fixed;
   width: 100%;
+  
 }
 .navbar {
   display: flex;
@@ -35,7 +36,9 @@ header{
   padding: 1rem 0;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+  color: var(----text);
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -45,11 +48,22 @@ header{
   list-style: none;
 }
 
+.nav-links li {
+  margin-left: 30px;
+}
+
 .nav-links li a {
   text-decoration: none;
-  margin-left: 30px;
   color: var(----text);
   font-weight: 500;
+  border-bottom: 2px solid var(--secondary);
+  display: block;
+  padding: 0.25rem 0.5rem;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover{
+  border-bottom: 2px solid var(----text);
 }
 
 .hamburger {
@@ -185,6 +199,8 @@ header{
   font-weight: bold;
   border: 2px solid var(--accent);
   text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .primary {
@@ -192,8 +208,18 @@ header{
   color: var(----text);
 }
 
+.primary:hover {
+  transform: translateY(-.25rem);
+  box-shadow: 0 4px 10px var(--accent);
+}
+
 .secondary {
   color: var(--accent);
+}
+
+.secondary:hover {
+  background: var(--accent);
+  color: var(----text);
 }
 
 .hero-image {
@@ -255,6 +281,7 @@ header{
   display: flex;
   justify-content: center;
   min-width: 300px;
+  object-fit: cover;
 }
 
 .about-image img {
