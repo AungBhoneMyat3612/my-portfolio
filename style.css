@@ -168,6 +168,9 @@ header{
 .hero-content {
   flex: 1;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .hero-content h1 {
@@ -184,7 +187,6 @@ header{
 .hero-content p {
   font-size: 1.1rem;
   color: var(----text);
-  margin: 20px 0;
   line-height: 1.5;
 }
 
