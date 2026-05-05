@@ -23,16 +23,16 @@ body {
 }
 
 /* Navbar */
-
+header{
+  background-color: var(--secondary);
+  position: fixed;
+  width: 100%;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
-  background: var(--secondary);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+  padding: 1rem 0;
 }
 
 .logo {
@@ -55,6 +55,10 @@ body {
 .hamburger {
   display: none;
   cursor: pointer;
+}
+
+.overlay{
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -164,16 +168,19 @@ body {
   font-size: 1.1rem;
   color: var(----text);
   margin: 20px 0;
+  line-height: 1.5;
 }
 
 .btn {
-  padding: 12px 25px;
+  padding: .75em 1.5em;
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: .5rem;
   font-weight: bold;
   border: 2px solid var(--accent);
+  margin-bottom: .5rem;
+  text-align: center;
 }
 
 .primary {
@@ -219,13 +226,17 @@ body {
 
 /* About Section */
 .about {
-  padding-bottom: 5rem;
+  padding: 5rem 0;
   text-align: center;
 }
 
-.about h2 {
-  margin-bottom: 3rem;
+.title {
   font-size: 1.5rem;
+}
+
+.subtitle{
+  color: #999;
+  margin-bottom: 3rem;
 }
 
 .about-container {
@@ -282,6 +293,7 @@ body {
 
 .skill-label span {
   font-size: 0.75rem;
+  color: #999;
 }
 
 .progress-bar {
@@ -314,6 +326,55 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* Portfolio Section */
+
+.portfolio{
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.portfolio-container{
+  display: flex;
+  gap: 3rem;
+}
+
+.card{
+  width: 400px;
+  border: 2px solid #666;
+  border-radius: 1rem;
+  padding: 1rem;  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.card span {
+  font-size: 0.75rem;
+  background: var(--primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  color: var(--background);
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
 
 /* Footer */
 footer {
